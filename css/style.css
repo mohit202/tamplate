@@ -1,0 +1,328 @@
+
+body
+{
+    margin:0;
+    padding:0;
+}
+
+.header
+{
+    width:100%; 
+    margin:0; 
+    border-bottom: 25px solid #00b1fa;
+    padding: 20px 0 0;
+}
+.container
+{
+    width:850px;
+    margin:0 auto;
+   
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+.logo
+{
+    width:200px;
+    height: 80px;;
+}
+.star-feed-box{
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 27px 0px;
+}
+.list-star{
+    width:158px;
+}
+.list-star ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.list-star ul li{
+    width: 15px;
+    list-style: none;
+    margin:0 2px;
+}
+.list-star ul li span{
+    font-weight:bold;
+    line-height:1px;
+    padding: 6px;
+}
+.list-star ul li sup{
+
+  color: #00b1fa;
+}
+.fb-logo img
+{
+    width: 135px;
+    padding-top: 13px;
+}
+.navbar
+{
+    width:100%;
+    background:#00bfff;
+    padding:20px 0px;
+}
+.article
+{
+    width: 100%;
+    padding:66px 0px;
+}
+.item
+{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.content-sec
+{
+    width:30%;
+    padding:45px 30px;
+    background:#fff;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+.content-sec select
+{
+    padding:5px 20px;
+    border:none;
+    border-radius:3px;
+    color:white;
+    background:#00bfff;
+}
+.content-sec h2 
+{
+    font-size:30px;
+    margin:0px;
+    padding:0px;
+    font-family: 'Baloo Bhai', cursive;
+    font-weight:100;
+}
+.content-sec p
+{
+    font-size:13px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px 0px;
+    line-height:20px;
+}
+.image-sec img
+{
+    width: 356px;
+    padding-right: 87px;
+    padding-top: 18px;
+}
+/* -------section--------- */
+.section 
+{
+    width:100%;
+    background:rgb(250, 249, 249);
+}
+.card
+{
+    width:800px;
+    margin:0 auto;
+}
+.items-section
+{
+    width:100%;
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding:30px 0px;
+   
+}
+.item1 
+{
+    width: 26%;
+    border-bottom: 8px solid #00bfff;
+    padding: 40px 0;
+    margin: 20px 17px;
+    background: #ffff;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    
+}
+.item1 img
+{
+width:40px;
+padding-left:80px;
+
+}
+.item1 h2
+{
+    margin:0;
+    font-family: 'Baloo Bhai', cursive;
+    font-size:17px;
+    font-weight:100;
+    padding:16px;
+    text-align: center;
+}
+.item1 p
+{
+padding-left:20px;
+line-height:20px;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+}
+.l-item
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+   padding:0px 20px;
+}
+.footer
+{
+    background:#004d66;
+    width: 100%;
+   
+}
+.content
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+}
+.content p
+{
+    font-size:10px;
+    color:#aaa;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 18px;
+}
+
+/*-----------responsive-design------------------------*/
+@media only screen and (max-width: 991.98px){
+    .container{
+        width: 90%;
+    }
+    .content-sec{
+        width: 40%;
+    }
+    .image-sec img{
+        width: 200px;
+    }
+    
+
+    .content p
+    {
+        text-align: center;
+    }
+    .l-item {
+        padding: 0;
+        width: 100%;
+    }
+    .fc,.lc{
+        width: 100%;
+    }
+
+}
+/*Small devices (landscape phones, less than 768px)*/
+
+@media only screen and (max-width: 767.98px) {
+    .container
+    {
+        width:80%;
+    }
+    .row {
+        flex-direction:row;
+    }
+    .logo{
+        width: 175px;
+        height: 65px;
+    } 
+
+    .star-feed-box{
+        width: 100%;
+    }
+    .image-sec img{
+        width:290px;
+        margin: 25px 0;
+    }
+    .item{
+        justify-content: center;
+    }
+    .content-sec{
+        width: 100%;
+    }
+    .card{
+        width: 90%;
+        padding: 0;
+    }
+    .items-section {
+        flex-direction: row;
+    }
+    .item1 {
+        width: 40%;
+    }
+
+    .content p
+    {
+        text-align: center;
+    }
+    .l-item {
+        padding: 0;
+        width: 100%;
+    }
+    .fc,.lc{
+        width: 100%;
+    }
+
+
+
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 575.98px){
+    .container
+    {
+        width:80%;
+    
+    }
+    .row {
+        flex-direction: column;
+    }
+
+    .star-feed-box{
+        width: 100%;
+    }
+    .image-sec img{
+        width:290px;
+        margin: 25px 0;
+    }
+    .content-sec{
+        width: 100%;
+    }
+    .card{
+        width: 80%;
+        padding: 0;
+    }
+    .items-section {
+        flex-direction: column;
+    }
+    .item1 {
+        width: 100%;
+    }
+
+    .content p
+    {
+        text-align: center;
+    }
+    .l-item {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+ 
