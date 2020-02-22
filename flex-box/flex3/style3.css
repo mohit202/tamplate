@@ -1,0 +1,124 @@
+body 
+{
+    margin:0;
+    padding:0;
+}
+.container
+{
+    
+    width:100%;
+ 
+}
+p 
+{
+    text-align:center;
+   /* padding-top:35px; */
+   color:#fff;
+   margin:0;
+}
+/* .container div
+{
+   margin:0px 0px 20px;
+} */
+.first ,.second ,.third
+{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    margin:20px 0;
+}
+.first 
+{
+    margin-top:0;
+}
+.box
+{
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+}
+.box1 
+{
+background:red;
+flex-basis:33.3%;
+}
+.box2
+{
+background:blue;
+flex-basis:33.3%;
+}
+.box3
+{
+background:red;
+flex-basis:33.3%;
+}
+
+.box4
+{
+background:red;
+flex-basis:41.6%;
+}
+.box5
+{
+background:blue;
+flex-basis:16.6%;
+}
+.box6
+{
+background:red;
+flex-basis:41.6%;
+}
+.box7
+{
+    background:red;
+    flex-basis:45.8%;
+}
+.box8
+{
+background:blue;
+flex-basis:8.3%;
+}
+.box9 
+{
+background:red;
+flex-basis:45.8%;
+}
+/*-----------responsive-design------------------------*/
+@media only screen and (max-width: 991.98px)
+{
+
+ .box1,.box2,.box4,.box5,.box7,.box8
+   {
+    flex-basis:50%;
+   }
+   .box3,.box6,.box9{
+       flex-basis: 100%;
+       border-top:1px solid #fff;
+   }
+
+}
+/*Small devices (landscape phones, less than 768px)*/
+
+@media only screen and (max-width: 767.98px) {
+    .box1,.box2,.box4,.box5,.box7,.box8
+   {
+    flex-basis:50%;
+   }
+   .box3,.box6,.box9{
+       flex-basis: 100%;
+       border-top:1px solid #fff;
+   }
+
+
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 575.98px)
+{
+   .box,.box1,.box2,.box3 
+   {
+    flex-basis:100%;
+   } 
+}
+
